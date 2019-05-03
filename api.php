@@ -20,12 +20,12 @@ if (isset($_POST['action'])) {
 					} else {
 						die('Invalid username/email or password!');
 					}
-        }
-        break;
+				}
+			}
+        	break;
         case 'UPD-COMMENT':
             $odb->query('UPDATE IPs SET comment="' . $_POST['comment'] . '" WHERE ip = "' . $_POST['ip'] . '"')->fetch();
         break;
-        }
     }
 }
 ?>
