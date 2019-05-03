@@ -4,11 +4,7 @@ session_name(NAME);
 			if (isset($_POST['useremail']) && isset($_POST['password'])) {
 				$useremail = $_POST['useremail'];
 				$password = $_POST['password'];
-                $countUser = $odb->prepare("SELECT COUNT(*) FROM `users` WHERE `username`='$useremail'");
-                $countUser->execute();
-				if ($countUser > 0) {
-					//User exists
-                    $userData = $odb->prepare("SELECT * FROM `users` WHERE `username`='$useremail' OR `email`='$useremail'");
+                    $userData = $odb->prepare("SELECT * FROM `users` WHERE `username`='$useremail'");
                     $userData->execute();
 					if (SHA1(md5($password)) === $userData['password']) {
 						session_start();
@@ -19,9 +15,6 @@ session_name(NAME);
 						die('Invalid username/email or password!');
 					}
 				}
-            }
-
-            
 
 
 /*         	break;
