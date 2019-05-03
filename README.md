@@ -5,7 +5,7 @@ It's only purpose is to provide comments to a certain user.
 ## TO-DO:
 
 * Admin area - add or remove subs
-* Proper authentication
+* ~~Proper authentication~~
 * More functionality
 * Index page
 * Pagination
