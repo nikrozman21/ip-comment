@@ -12,4 +12,5 @@ else {
 
 $do = $odb->prepare('UPDATE IPs SET comment="' . $_POST['comment'] . '" WHERE ip = "' . $_POST['ip'] . '"');
 $do->execute();
+header('LOCATION: admin');
 ?>
