@@ -6,8 +6,8 @@ session_name(NAME);
 				$password = $_POST['password'];
                     $userData = $odb->prepare("SELECT * FROM `users` WHERE `username`='$useremail'");
                     $userData->execute();
-/*                     echo $userData;
-					if (SHA1(md5($password)) === $userData['password']) {
+                    echo $userData;
+/* 					if (SHA1(md5($password)) === $userData['password']) {
 						session_start();
 						$_SESSION['id'] = $userData['id'];
                         $_SESSION['username'] = $userData['username'];
