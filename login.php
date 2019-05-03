@@ -36,11 +36,11 @@ else {
   <body class="text-center">
     <form action="post.php" method="post">
       <div class="form-group">
-        <img class="mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="72"
+        <img class="mb-4" src="https://accuratenode.com/assets/img/glyph-1080.png" alt="" width="72"
           height="72">
         <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
-        <label for="useremail" class="sr-only">Username</label>
-        <input type="plain" id="useremail" class="form-control" placeholder="Username" required="" autofocus=""
+        <label for="username" class="sr-only">Username</label>
+        <input type="plain" id="username" class="form-control" placeholder="Username" required="" autofocus=""
           autocomplete="off"
           style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;">
       </div>
