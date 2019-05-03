@@ -29,42 +29,18 @@ else {
 <body>
   <div class="container">
     <h3 class="text-center">Login</h3>
-    <div class="form-group">
-      <label for="usermail">Username:</label>
-      <input type="text" class="form-control" id="usermail" name="usermail" required>
-    </div>
-    <div class="form-group">
-      <label for="pwd">Password:</label>
-      <input type="password" class="form-control" id="password" name="password" required>
-    </div>
-    <button type="submit" id="loginbtn" name="submit" class="btn btn-default">Login</button>
+    <form action="api.php" method="post">
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" class="form-control" id="usermail" name="usermail" required>
+      </div>
+      <div class="form-group">
+        <label for="pwd">Password:</label>
+        <input type="password" class="form-control" id="password" name="password" required>
+      </div>
+      <button type="submit" name="submit" class="btn btn-default">Login</button>
+    </form>
   </div>
-  <script type="text/javascript">
-    var useremail = null;
-    var password = null
-    $('#loginbtn').click(function () {
-      useremail = $('#useremail').val();
-      password = $('#password').val();
-      $.post("api.php", {
-          useremail: useremail,
-          password: password,
-          action: 'login',
-        })
-        .done(function (data) {
-          if (data == '1') {
-            //Login successful
-            $('#result').html(
-              '<div class="alert alert-success"><i class="fa fa-check"></i> Successfully signed in! Redirecting...</div>'
-              );
-            setTimeout(function () {
-              location.replace('.');
-            }, 4321);
-          } else {
-            $('#result').html('<div class="alert alert-danger"><i class="fa fa-times"></i> ' + data + '</div>');
-          }
-        });
-    });
-  </script>
 </body>
 
 </html>
