@@ -6,6 +6,8 @@ if (isset($_POST['action'])) {
 	$action = $_POST['action'];
 	switch($action) {
 		case 'login':
+		echo $_POST['useremail'];
+		echo $_POST['password'];
 			if (isset($_POST['useremail']) && isset($_POST['password'])) {
 				$useremail = $_POST['useremail'];
 				$password = $_POST['password'];
