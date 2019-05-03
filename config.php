@@ -1,9 +1,9 @@
 <?php
-define('DB_HOST', '116.203.97.25');
-define('DB_NAME', 'ipinfo');
-define('DB_USERNAME', 'ipinfo');
-define('DB_PASSWORD', '9JBGB8rry95zKOO9');
-define('NAME', 'ipinfo');
+define('DB_HOST', 'YOURIP');
+define('DB_NAME', 'DBNAME');
+define('DB_USERNAME', 'DBUSER');
+define('DB_PASSWORD', 'PASSWORD');
+define('NAME', 'SESSIONNAME');
 
 try {
     $odb = new PDO('mysql:host=' . DB_HOST . ';dbname=' . DB_NAME, DB_USERNAME, DB_PASSWORD);
