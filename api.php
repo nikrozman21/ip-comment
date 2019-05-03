@@ -14,15 +14,12 @@ session_name(NAME);
 					} else {
 						die('Invalid username/email or password!');
 					}
-				}
-
-
+                }
+            }
 /*         	break;
         case 'upd-comment':
             $odb->query('UPDATE IPs SET comment="' . $_POST['comment'] . '" WHERE ip = "' . $_POST['ip'] . '"')->fetch();
         break;
     }
 } */
-
-
 ?>
