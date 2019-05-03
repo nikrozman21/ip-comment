@@ -32,7 +32,7 @@ else {
     <form action="api.php" method="post">
       <div class="form-group">
         <label for="username">Username:</label>
-        <input type="text" class="form-control" id="usermail" name="usermail" required>
+        <input type="text" class="form-control" id="useremail" name="useremail" required>
       </div>
       <div class="form-group">
         <label for="pwd">Password:</label>
