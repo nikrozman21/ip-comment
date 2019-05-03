@@ -36,11 +36,10 @@ else {
   <body class="text-center">
     <form action="post.php" method="post">
       <div class="form-group">
-        <img class="mb-4" src="https://accuratenode.com/assets/img/glyph-1080.png" alt="" width="72"
-          height="72">
+        <img class="mb-4" src="https://accuratenode.com/assets/img/glyph-1080.png" alt="" width="72" height="72">
         <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
         <label for="username" class="sr-only">Username</label>
-        <input type="plain" id="username" class="form-control" placeholder="Username" required="" autofocus="" autocomplete="off">
+        <input type="plain" id="username" class="form-control" placeholder="Username">
       </div>
       <div class="form-group">
         <label for="password" class="sr-only">Password</label>
