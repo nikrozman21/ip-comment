@@ -7,7 +7,7 @@ if (isset($_SESSION['id'])) {
     $userInfo = $odb->query("SELECT * FROM `users` WHERE `id` = '$id'")->fetch();
 }
 else {
-    die('Not signed in!');
+    header('LOCATION: login');
 }
 ?>
 <!DOCTYPE html>
@@ -47,7 +47,7 @@ else {
                         <tbody>
 
                             <?php
-                            $con=mysqli_connect("server_ip","db_username","db_pass","db_name");
+                            $con=mysqli_connect("$server_ip","$db_username","$db_pass","$db_name");
                             if (mysqli_connect_errno()) {
                                 echo "Failed to connect to MySQL: " . mysqli_connect_error();
                             } else {
