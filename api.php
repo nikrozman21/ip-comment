@@ -1,9 +1,6 @@
 <?php
 include 'config.php';
 session_name(NAME);
-
-		echo $_POST['useremail'];
-		echo $_POST['password'];
 			if (isset($_POST['useremail']) && isset($_POST['password'])) {
 				$useremail = $_POST['useremail'];
 				$password = $_POST['password'];
@@ -14,7 +11,8 @@ session_name(NAME);
 					if (SHA1(md5($password)) === $userData['password']) {
 						session_start();
 						$_SESSION['id'] = $userData['id'];
-						$_SESSION['username'] = $userData['username'];
+                        $_SESSION['username'] = $userData['username'];
+                        header(LOCATION: admin);
 					} else {
 						die('Invalid username/email or password!');
 					}
