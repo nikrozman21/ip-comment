@@ -44,7 +44,7 @@ body {
   border-top-right-radius: 0;
 }
 
-.username .password {
+.username, .password {
   margin-bottom: 10px;
 }
 
