@@ -6,6 +6,7 @@ session_name(NAME);
 				$password = $_POST['password'];
                     $userData = $odb->prepare("SELECT * FROM `users` WHERE `username`='$useremail'");
                     $userData->execute();
+/*                     echo $userData;
 					if (SHA1(md5($password)) === $userData['password']) {
 						session_start();
 						$_SESSION['id'] = $userData['id'];
@@ -13,7 +14,7 @@ session_name(NAME);
                         header("LOCATION: admin");
 					} else {
 						die('Invalid username/email or password!');
-					}
+					} */
 				}
 
 
