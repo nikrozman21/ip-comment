@@ -12,7 +12,7 @@ session_name(NAME);
 						session_start();
 						$_SESSION['id'] = $userData['id'];
                         $_SESSION['username'] = $userData['username'];
-                        header(LOCATION: admin);
+                        header("LOCATION: admin");
 					} else {
 						die('Invalid username/email or password!');
 					}
