@@ -5,7 +5,7 @@ session_name(NAME);
 				$useremail = $_POST['useremail'];
 				$password = $_POST['password'];
                 $countUser = $odb->prepare("SELECT COUNT(*) FROM `users` WHERE `username`='$useremail'");
-                $sth->execute();
+                $countUser->execute();
 				if ($countUser > 0) {
 					//User exists
 					$userData = $odb->query("SELECT * FROM `users` WHERE `username`='$useremail' OR `email`='$useremail'")->fetch();
