@@ -18,8 +18,6 @@ else {
 <!DOCTYPE html>
 <html>
 
-<head>
-
   <head>
     <title>Login | IP management</title>
     <meta charset="UTF-8">
@@ -30,8 +28,6 @@ else {
     <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
     <link href="css/signin.css" rel="stylesheet">
   </head>
-
-<body>
 
   <body class="text-center">
     <form action="post.php" method="post">
