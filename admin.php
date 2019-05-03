@@ -9,6 +9,7 @@ if (isset($_SESSION['id'])) {
 else {
     die('Not signed in!');
 }
+?>
 <!DOCTYPE html>
 <html lang="en">
 
