@@ -1,8 +1,14 @@
 <?php
-    session_start();
-    if(!isset($_SESSION['login'])) {
-        header('LOCATION:login'); die();}
-?>
+include 'config.php';
+session_name(NAME);
+session_start();
+if (isset($_SESSION['id'])) {
+    $id = $_SESSION['id'];
+    $userInfo = $odb->query("SELECT * FROM `users` WHERE `id` = '$id'")->fetch();
+}
+else {
+    die('Not signed in!');
+}
 <!DOCTYPE html>
 <html lang="en">
 
