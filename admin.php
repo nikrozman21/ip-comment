@@ -48,6 +48,8 @@ else {
 
                             <?php
                             $con=mysqli_connect("$server_ip","$db_username","$db_pass","$db_name");
+                            echo("$server_ip");
+                            echo("$db_username");
                             if (mysqli_connect_errno()) {
                                 echo "Failed to connect to MySQL: " . mysqli_connect_error();
                             } else {
