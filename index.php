@@ -29,42 +29,7 @@ else {
 </head>
 
 <body>
-    <div class="limiter">
-        <div class="container-table100">
-            <div class="wrap-table100">
-                <div class="table100">
-                    <table>
-                        <thead>
-                            <tr class="table100-head">
-                                <th class="column1">IP Address</th>
-                                <th class="column2"></th>
-                                <th class="column3">Comment</th>
-                                <th class="column4"></th>
-                                <th class="column5"></th>
-                                <th class="column6">Action</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-
-                            <?php
-                                $ips = $odb->prepare("SELECT * FROM ips");
-                                $ips->execute();
-                                while($row = $ips->fetch(PDO::FETCH_ASSOC)) {
-                                    echo '<tr>';
-                                    echo '<td class="column1">'. $row['ip'] . '</td>';
-                                    echo '<td class="column2"></td>';
-                                    echo '<td class="column3">' . $row['comment'] . '</td>';
-                                    echo '<td class="column4"></td>';
-                                    echo '<td class="column5"></td>';
-                                    echo '<td class="column6"><a class="btn btn-primary btn-sm" href="https://ipinfo.accuratenode.com/manage?ip=' . $row['ip'] . '" role="button">Edit</a></td>';
-                                    echo '</tr>';}
-                            ?>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </div>
+    
     <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
     <script src="vendor/bootstrap/js/popper.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
