@@ -8,7 +8,8 @@ session_name(NAME);
                 $countUser->execute();
 				if ($countUser > 0) {
 					//User exists
-					$userData = $odb->query("SELECT * FROM `users` WHERE `username`='$useremail' OR `email`='$useremail'")->fetch();
+                    $userData = $odb->prepare("SELECT * FROM `users` WHERE `username`='$useremail' OR `email`='$useremail'")
+                    $userData->execute();
 					if (SHA1(md5($password)) === $userData['password']) {
 						session_start();
 						$_SESSION['id'] = $userData['id'];
