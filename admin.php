@@ -47,16 +47,9 @@ else {
                         <tbody>
 
                             <?php
-                                                        echo("$server_ip");
-                                                        echo("$db_username");
-                            $con=mysqli_connect("$server_ip","$db_username","$db_pass","$db_name");
-
-                            if (mysqli_connect_errno()) {
-                                echo "Failed to connect to MySQL: " . mysqli_connect_error();
-                            } else {
-                                $result = mysqli_query($con,"SELECT * FROM IPs");}
-
-                                while($row = mysqli_fetch_array($result)) {
+                                $ips = $odb->prepare("SELECT * FROM ips");
+                                $ips->execute();
+                                while($row = $ips->fetch(PDO::FETCH_ASSOC)) {
                                     echo '<tr>';
                                     echo '<td class="column1">'. $row['ip'] . '</td>';
                                     echo '<td class="column2"></td>';
@@ -65,8 +58,7 @@ else {
                                     echo '<td class="column5"></td>';
                                     echo '<td class="column6"><a class="btn btn-primary btn-sm" href="https://yourwebsite/manage?ip=' . $row['ip'] . '" role="button">Edit</a></td>';
                                     echo '</tr>';}
-                                mysqli_close($con);
-                        ?>
+                            ?>
                         </tbody>
                     </table>
                 </div>
