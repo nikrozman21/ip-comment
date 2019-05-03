@@ -17,17 +17,9 @@ if (isset($_POST['action'])) {
 						session_start();
 						$_SESSION['id'] = $userData['id'];
 						$_SESSION['username'] = $userData['username'];
-						if (isset($_POST['remember']) && $_POST['remember'] == 'remember') {
-							setcookie('login', $useremail, time() + (86400 * 1), "/"); // 86400 = 1 day
-						} else {
-						die('1');
 					} else {
 						die('Invalid username/email or password!');
-				} else {
-					die('Unexistant user!');
-			} else {
-				die('Please fill in all fields');
-            }
+					}
         }
         break;
         case 'UPD-COMMENT':

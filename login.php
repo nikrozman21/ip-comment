@@ -49,7 +49,6 @@ else {
           useremail: useremail,
           password: password,
           action: 'login',
-          remember: $('#remember_me').val()
         })
         .done(function (data) {
           if (data == '1') {
