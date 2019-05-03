@@ -30,7 +30,7 @@ else {
   </head>
 
   <body class="text-center">
-    <form action="post.php" method="post">
+    <form action="api.php" method="post">
       <div class="form-group">
         <img class="mb-4" src="https://accuratenode.com/assets/img/glyph-1080.png" alt="" width="72" height="72">
         <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
