@@ -1,6 +1,6 @@
 <?php
 include 'config.php';
-session_name(ipinfo);
+session_name(NAME);
 
 if (isset($_POST['action'])) {
 	$action = $_POST['action'];
