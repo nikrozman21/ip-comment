@@ -40,13 +40,12 @@ else {
         <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
         <label for="username" class="sr-only">Username</label>
         <input type="plain" id="username" class="form-control" placeholder="Username">
-      </div>
-      <div class="form-group">
         <label for="password" class="sr-only">Password</label>
         <input type="password" name="password" id="password" class="form-control" placeholder="Password" required="" autocomplete="off">
-      </div><button class="btn btn-lg btn-primary btn-block" name="submit" type="submit">Sign in</button>
-      <p class="mt-5 mb-3 text-muted">© 2019</p>
-    </form>
+        <button class="btn btn-lg btn-primary btn-block" name="submit" type="submit">Sign in</button>
+        <p class="mt-5 mb-3 text-muted">© 2019</p>
+      </div>
+      </form>
   </body>
 
 </html>
