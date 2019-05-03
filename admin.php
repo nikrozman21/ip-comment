@@ -56,7 +56,7 @@ else {
                                     echo '<td class="column3">' . $row['comment'] . '</td>';
                                     echo '<td class="column4"></td>';
                                     echo '<td class="column5"></td>';
-                                    echo '<td class="column6"><a class="btn btn-primary btn-sm" href="https://yourwebsite/manage?ip=' . $row['ip'] . '" role="button">Edit</a></td>';
+                                    echo '<td class="column6"><a class="btn btn-primary btn-sm" href="https://ipinfo.accuratenode.com/manage?ip=' . $row['ip'] . '" role="button">Edit</a></td>';
                                     echo '</tr>';}
                             ?>
                         </tbody>

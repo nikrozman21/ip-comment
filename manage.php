@@ -1,11 +1,15 @@
 <?php
-    session_start();
-    if(!isset($_SESSION['login'])) {
-        header('LOCATION:login'); die();}
-    if($_GET['ip'] == ''){
-        header('LOCATION:admin'); die();}
+include 'config.php';
+session_name(NAME);
+session_start();
+if (isset($_SESSION['id'])) {
+    $id = $_SESSION['id'];
+    $userInfo = $odb->query("SELECT * FROM `users` WHERE `id` = '$id'")->fetch();
+}
+else {
+    header('LOCATION: login');
+}
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -41,7 +45,6 @@
                             </tr>
                         </thead>
                         <tbody>
-
                             <?php
                                     echo '<tr>';
                                     echo '<td class="column1"><form action="post.php" method="post"><input type="text" name="ip" value="'. $_GET['ip'] . '" readonly> </td>';
@@ -51,8 +54,7 @@
                                     echo '<td class="column5"></td>';
                                     echo '<td class="column6"><input class="btn btn-primary btn-sm" type="submit"></td></form>';
                                     echo '</tr>';
-                                mysqli_close($con);
-                        ?>
+                            ?>
                         </tbody>
                     </table>
                 </div>
