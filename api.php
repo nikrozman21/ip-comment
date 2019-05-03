@@ -2,10 +2,10 @@
 include 'config.php';
 session_name(NAME);
 
-if (isset($_POST['action'])) {
+/* if (isset($_POST['action'])) {
 	$action = $_POST['action'];
 	switch($action) {
-		case 'login':
+		case 'login': */
 		echo $_POST['useremail'];
 		echo $_POST['password'];
 			if (isset($_POST['useremail']) && isset($_POST['password'])) {
@@ -24,10 +24,10 @@ if (isset($_POST['action'])) {
 					}
 				}
 			}
-        	break;
+/*         	break;
         case 'upd-comment':
             $odb->query('UPDATE IPs SET comment="' . $_POST['comment'] . '" WHERE ip = "' . $_POST['ip'] . '"')->fetch();
         break;
     }
-}
+} */
 ?>
