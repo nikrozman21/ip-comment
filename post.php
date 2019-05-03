@@ -1,19 +1,15 @@
 <?php
-    session_start();
-    if(!isset($_SESSION['login'])) {
-        header('LOCATION:login'); die();}
-
-$conn = new mysqli("server_ip","db_username","db_pass","db_name");
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-} 
-
-$sql = 'UPDATE IPs SET comment="' . $_POST['comment'] . '" WHERE ip = "' . $_POST['ip'] . '"';
-if ($conn->query($sql) === TRUE) {
-    header('LOCATION:admin'); die();
-} else {
-    echo "Error updating record: " . $conn->error;
+include 'config.php';
+session_name(NAME);
+session_start();
+if (isset($_SESSION['id'])) {
+    $id = $_SESSION['id'];
+    $userInfo = $odb->query("SELECT * FROM `users` WHERE `id` = '$id'")->fetch();
+}
+else {
+    header('LOCATION: login');
 }
 
-$conn->close();
+$do = $odb->prepare('UPDATE IPs SET comment="' . $_POST['comment'] . '" WHERE ip = "' . $_POST['ip'] . '"');
+$do->execute();
 ?>
