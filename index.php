@@ -5,9 +5,8 @@ session_start();
 if (isset($_SESSION['id'])) {
     $id = $_SESSION['id'];
     $userInfo = $odb->query("SELECT * FROM `users` WHERE `id` = '$id'")->fetch();
-}
-else {
-    header('LOCATION: login');
+    echo $id;
+    echo $userInfo;
 }
 ?>
 <!DOCTYPE html>
