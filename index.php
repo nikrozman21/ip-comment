@@ -18,6 +18,7 @@ if (isset($_SESSION['id'])) {
     <meta property="og:site_name" content="AccuarteNode">
     <meta property="og:url" content="https://ipinfo.accuratenode.com">
     <meta property="og:description" content="IP Management platform">
+    <meta property="og:image" content="https://ipinfo.accuratenode.com/images/icons/favicon_big.png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
