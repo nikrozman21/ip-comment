@@ -30,6 +30,7 @@ else {
   </head>
 
   <body class="text-center">
+  <?php include 'nav.php'; ?>
     <form action="api.php" method="post">
       <div class="form-group">
         <img class="mb-4" src="https://accuratenode.com/assets/img/glyph-1080.png" alt="" width="72" height="72">
