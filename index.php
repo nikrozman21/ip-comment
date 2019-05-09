@@ -29,8 +29,8 @@ if (isset($_SESSION['id'])) {
 <body class="bg-dark">
     <?php include 'nav.php'; ?>
     <main role="main" class="container">
-        <div class="jumbotron text-center">
-            <h1 class="display-3 mb-4"><b><span class="text-primary font-weight-bold">IP</span>Info</b></h1>
+        <div class="jumbotron text-center bg-secondary">
+            <h1 class="display-3 mb-4"><b><span class="text-light font-weight-bold">IP</span>Info</b></h1>
             <p class="lead mb-4">Welcome to AccurateNode's IP administration panel.<br>This panel is built mostly for staff to keep track of the used IPs and what they are in use by.</p>
             <a class="btn btn-sm btn-primary" href="https://accuratenode.com/" target="_blank" role="button">Landing page</a>
         </div>
