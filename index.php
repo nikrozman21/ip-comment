@@ -30,10 +30,11 @@ if (isset($_SESSION['id'])) {
     <?php include 'nav.php'; ?>
     <main role="main" class="container">
         <div class="jumbotron text-center">
-            <h1><span class="text-primary">IP</span>Info</h1>
-            <p class="lead">Welcome to AccurateNode's IP administration panel. This panel is built mostly for staff to
+            <h1><b><span class="text-primary">IP</span>Info</b></h1>
+            <p class="lead">Welcome to AccurateNode's IP administration panel.<br>This panel is built mostly for staff to
                 keep track of the used IPs and what they are in use by.</p>
-            <a class="btn btn-sm btn-primary" href="https://accuratenode.com/" target="_blank" role="button">Landing page</a>
+            <a class="btn btn-sm btn-primary" href="https://accuratenode.com/" target="_blank" role="button">Landing
+                page</a>
         </div>
     </main>
 </body>
