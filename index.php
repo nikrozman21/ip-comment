@@ -53,7 +53,7 @@ if (isset($_SESSION['id'])) {
 
     <div class="container">
         <div class="alert alert-primary" role="alert">
-            This website uses cookies!
+            This website uses cookies! Or does it ?
         </div>
 
     </div>
