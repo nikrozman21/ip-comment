@@ -14,6 +14,10 @@ if (isset($_SESSION['id'])) {
     <title>Home | IP management</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="IPInfo | AccurateNode">
+    <meta property="og:site_name" content="AccuarteNode">
+    <meta property="og:url" content="https://ipinfo.accuratenode.com">
+    <meta property="og:description" content="IP Management platform">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
@@ -31,8 +35,10 @@ if (isset($_SESSION['id'])) {
     <main role="main" class="container">
         <div class="jumbotron text-center bg-darker">
             <h1 class="display-3 mb-4 text-light"><b><span class="text-primary font-weight-bold">IP</span>Info</b></h1>
-            <p class="lead mb-4 text-secondary">Welcome to AccurateNode's IP administration panel.<br>This panel is built mostly for staff to keep track of the used IPs and what they are in use by.</p>
-            <a class="btn btn-sm btn-primary" href="https://accuratenode.com/" target="_blank" role="button">Landing page</a>
+            <p class="lead mb-4 text-secondary">Welcome to AccurateNode's IP administration panel.<br>This panel is
+                built mostly for staff to keep track of the used IPs and what they are in use by.</p>
+            <a class="btn btn-sm btn-primary" href="https://accuratenode.com/" target="_blank" role="button">Landing
+                page</a>
         </div>
     </main>
 </body>
