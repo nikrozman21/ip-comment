@@ -28,12 +28,12 @@ if (isset($_SESSION['id'])) {
 
 <body>
     <?php include 'nav.php'; ?>
-    <main role="main" class="container mt-4">
-        <div class="jumbotron">
-            <h1>Index</h1>
-            <p class="lead">This example is a quick exercise to illustrate how fixed to top navbar works. As you scroll,
-                it will remain fixed to the top of your browser's viewport.</p>
-            <a class="btn btn-lg btn-primary" href="#" role="button">View navbar docs »</a>
+    <main role="main" class="container">
+        <div class="jumbotron text-center">
+            <h1><span class="text-primary">IP</span>Info</h1>
+            <p class="lead">Welcome to AccurateNode's IP administration panel. This panel is built mostly for staff to
+                keep track of the used IPs and what they are in use by.</p>
+            <a class="btn btn-sm btn-primary" href="https://accuratenode.com/" target="_blank" role="button">Landing page</a>
         </div>
     </main>
 </body>
