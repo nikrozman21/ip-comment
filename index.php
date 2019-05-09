@@ -27,19 +27,21 @@ if (isset($_SESSION['id'])) {
 </head>
 
 <body>
-<?php include 'nav.php'; ?>
-    <div class="container">
-        <div class="alert alert-primary" role="alert">
-            This website uses cookies! Or does it ??
+    <?php include 'nav.php'; ?>
+    <main role="main" class="container">
+        <div class="jumbotron">
+            <h1>Index</h1>
+            <p class="lead">This example is a quick exercise to illustrate how fixed to top navbar works. As you scroll,
+                it will remain fixed to the top of your browser's viewport.</p>
+            <a class="btn btn-lg btn-primary" href="#" role="button">View navbar docs »</a>
         </div>
-
-    </div>
-
-    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-    <script src="vendor/bootstrap/js/popper.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-    <script src="vendor/select2/select2.min.js"></script>
-    <script src="js/main.js"></script>
+    </main>
 </body>
+<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<script src="vendor/bootstrap/js/popper.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="vendor/select2/select2.min.js"></script>
+<script src="js/main.js">
+</script>
 
 </html>
