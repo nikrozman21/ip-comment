@@ -1,4 +1,3 @@
-<div class="container">
     <nav class="navbar-fixed-top navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#"><b><span class="text-primary">IP</span>Info</b></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -20,4 +19,3 @@
             </form>
         </div>
     </nav>
-</div>
