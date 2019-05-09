@@ -28,7 +28,7 @@ if (isset($_SESSION['id'])) {
 
 <body>
     <?php include 'nav.php'; ?>
-    <main role="main" class="container">
+    <main role="main" class="container mt-4">
         <div class="jumbotron">
             <h1>Index</h1>
             <p class="lead">This example is a quick exercise to illustrate how fixed to top navbar works. As you scroll,
