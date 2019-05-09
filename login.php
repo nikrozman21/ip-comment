@@ -36,7 +36,6 @@ else {
 </head>
 
 <body>
-  <?php include 'nav.php'; ?>
   <div class="text-center">
     <form action="api.php" method="post">
       <div class="form-group">
