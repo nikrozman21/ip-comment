@@ -47,7 +47,8 @@ else {
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
-                <button class="btn btn-warning my-2 my-sm-0" href="admin">Admin Area</button>
+                <a href="admin" target="_blank"><button class="btn btn-warning my-2 my-sm-0" href="admin">Admin
+                        Area</button></a>
             </form>
         </div>
     </nav>
