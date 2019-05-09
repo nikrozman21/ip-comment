@@ -26,7 +26,7 @@ if (isset($_SESSION['id'])) {
     <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 
-<body>
+<body class="bg-dark">
     <?php include 'nav.php'; ?>
     <main role="main" class="container">
         <div class="jumbotron text-center">
