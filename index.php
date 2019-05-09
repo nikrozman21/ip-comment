@@ -52,7 +52,7 @@ if (isset($_SESSION['id'])) {
     </nav>
 
     <div class="container">
-        <div class="alert alert-primary ml-1" role="alert">
+        <div class="alert alert-primary" role="alert">
             This website uses cookies!
         </div>
 
