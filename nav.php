@@ -1,4 +1,4 @@
-    <nav class="navbar-fixed-top navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="fixed-top navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#"><b><span class="text-primary">IP</span>Info</b></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
